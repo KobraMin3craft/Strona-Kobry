@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kobra Minecraft - Oficjalna strona</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg-overlay"></div>
+
+<header class="top-nav">
+    <div class="logo">
+        <span class="logo-main">Kobra</span><span class="logo-sub">Minecraft</span>
+    </div>
+    <nav>
+        <button class="nav-btn" data-section="home">Strona główna</button>
+        <button class="nav-btn" data-section="series">Prawdziwe życie</button>
+        <button class="nav-btn" data-section="youtube">YouTube</button>
+        <button class="nav-btn" data-section="portfolio">Portfolio</button>
+        <button class="nav-btn" data-section="contact">Kontakt</button>
+        <button class="nav-btn" data-section="discord">Discord</button>
+    </nav>
+</header>
+
+<main>
+    <!-- STRONA GŁÓWNA -->
+    <section id="home" class="section active">
+        <div class="content-grid">
+            <div class="text-block">
+                <h1>Witaj na stronie <span class="accent">Kobra_Minecraft</span></h1>
+                <p>
+                    To moja oficjalna strona – Minecraft, YouTube, projekty i kontakt w jednym miejscu.
+                </p>
+                <div class="cta-row">
+                    <button class="primary-btn" data-section="series">Zobacz serię „Prawdziwe życie”</button>
+                    <button class="ghost-btn" data-section="youtube">Przejdź na YouTube</button>
+                </div>
+            </div>
+            <div class="skin-card">
+                <div class="skin-avatar"></div>
+                <p class="skin-name">@Kobra_Minecraft</p>
+                <a class="skin-link" href="https://namemc.com/profile/Kobra_Minecraft" target="_blank">
+                    Zobacz skin na NameMC
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERIA PRAWIDZIWE ŻYCIE -->
+    <section id="series" class="section">
+        <h2>Seria Minecraft: <span class="accent">Prawdziwe życie</span></h2>
+        <p class="section-desc">
+            Odcinek: <strong>Prawdziwe życie #1 – Początek serii</strong><br>
+            Seria upadła, bo nikt nie był, kiedy chcieliśmy – ale klimat został.
+        </p>
+
+        <div class="card-row">
+            <div class="video-card" id="seriesVideoCard">
+                <div class="video-thumb">
+                    <div class="play-icon"></div>
+                </div>
+                <div class="video-info">
+                    <h3>Prawdziwe życie #1 – Początek serii</h3>
+                    <p>Kliknij, aby zobaczyć animację i przejść do odcinka.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-anim-overlay" id="videoAnimOverlay">
+            <div class="video-anim-box">
+                <div class="video-anim-mc"></div>
+                <p>Ładowanie odcinka „Prawdziwe życie #1”...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- YOUTUBE -->
+    <section id="youtube" class="section">
+        <h2>Kategoria: <span class="accent">YouTube</span></h2>
+        <p class="section-desc">
+            Tutaj przechodzisz na mój kanał – z lekką animacją, a nie suchym linkiem.
+        </p>
+
+        <div class="card-row">
+            <div class="yt-card" id="youtubeCard">
+                <div class="yt-thumb"></div>
+                <div class="yt-info">
+                    <h3>Mój kanał YouTube</h3>
+                    <p>Kliknij, aby zobaczyć animację i przejść na kanał.</p>
+                </div>
+            </div>
+        </div>
+
+        <p class="hint">
+            Podmień link w <code>script.js</code> na swój prawdziwy kanał YouTube.
+        </p>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="section">
+        <h2>Portfolio</h2>
+        <p class="section-desc">
+            Tu możesz wrzucić swoje projekty: odcinki, miniaturki, pluginy, serwery, grafiki.
+        </p>
+
+        <div class="card-row">
+            <div class="portfolio-card">
+                <h3>Seria „Prawdziwe życie”</h3>
+                <p>Realistyczna seria Minecraft, klimat, fabuła, emocje – nawet jeśli upadła, dalej jest częścią historii.</p>
+            </div>
+            <div class="portfolio-card">
+                <h3>Projekty YouTube</h3>
+                <p>Miniaturki, pomysły na serie, montaż – wszystko, co buduje Twój styl.</p>
+            </div>
+            <div class="portfolio-card">
+                <h3>Inne projekty</h3>
+                <p>Tu możesz dopisać serwery, pluginy, resourcepacki, co tylko chcesz.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section id="contact" class="section">
+        <h2>Kontakt</h2>
+        <p class="section-desc">
+            Jeśli chcesz się odezwać w sprawie współpracy, nagrywek albo po prostu pogadać – napisz.
+        </p>
+
+        <form class="contact-form" onsubmit="return false;">
+            <div class="form-row">
+                <label>Nick / Imię</label>
+                <input type="text" placeholder="Twój nick">
+            </div>
+            <div class="form-row">
+                <label>E-mail lub Discord</label>
+                <input type="text" placeholder="np. kobra@example.com lub Kobra#1234">
+            </div>
+            <div class="form-row">
+                <label>Wiadomość</label>
+                <textarea rows="4" placeholder="Napisz, o co chodzi :)"></textarea>
+            </div>
+            <button class="primary-btn" type="submit">Wyślij (mock – do podpięcia później)</button>
+        </form>
+    </section>
+
+    <!-- DISCORD -->
+    <section id="discord" class="section">
+        <h2>Discord</h2>
+        <p class="section-desc">
+            Tutaj możesz sprawdzić, czy jestem „aktywny” i szybko skopiować mój nick / serwer.
+        </p>
+
+        <div class="discord-card">
+            <div class="discord-status-row">
+                <span class="status-dot status-online" id="discordStatusDot"></span>
+                <span id="discordStatusText">Status: Aktywny</span>
+            </div>
+            <div class="discord-info">
+                <p><strong>Mój Discord:</strong> <span id="discordTag">Kobra_Minecraft#0001</span></p>
+                <button class="primary-btn" id="copyDiscordBtn">Kopiuj nick</button>
+            </div>
+            <div class="discord-info">
+                <p><strong>Serwer Discord:</strong> <span id="discordServer">https://discord.gg/twoj-serwer</span></p>
+                <button class="ghost-btn" id="copyDiscordServerBtn">Kopiuj link serwera</button>
+            </div>
+            <p class="hint">
+                Prawdziwy status online/offline możesz kiedyś podpiąć pod API bota – na razie jest to wizualka.
+            </p>
+        </div>
+    </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
